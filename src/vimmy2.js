@@ -11,17 +11,6 @@
     BUMP_DISTANCE = 100, // px
     SCROLL_DURATION = 100; // ms
 
-  var GREEDY_INPUT_TYPES = [
-    'text',
-    'password',
-    'phone',
-    'email',
-    'search',
-    'url',
-    'tel',
-    'number',
-  ];
-
   var
     TARGETABLE_ELEMENTS = [ 'a', 'button', 'input', 'select' ],
     TARGETABLE_ELEMENT_SELECTOR = TARGETABLE_ELEMENTS.join( ', ' );
@@ -301,7 +290,7 @@
 
     if ( tag === 'TEXTAREA' ) return true;
     if ( tag === 'SELECT' ) return true;
-    if ( tag === 'INPUT' && ( !type || type.isIn( GREEDY_INPUT_TYPES ) ) ) return true;
+    if ( tag === 'INPUT' && ) return true;
     if ( element.contentEditable === 'true' ) return true;
 
 
